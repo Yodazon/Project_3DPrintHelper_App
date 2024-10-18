@@ -4,5 +4,4 @@ pydantic
 typing
 torchvision
 pillow
-io
 uvicorn 
