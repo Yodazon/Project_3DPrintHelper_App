@@ -1,0 +1,17 @@
+
+/CNNBuilding/images
+/CNNBuilding/images_combined
+/CNNBuilding/src
+/CNNBuilding/test_image
+
+.ort
+*.ort
+*.pyc
+*.ptl
+*.pth
+*.env
+*.onnx
+CNNBuilding/models_in_folder/CNNModelV0_2.pth
+CNNBuilding/TF_code/fingerprint.pb
+CNNBuilding/TF_code/variables/variables.data-00000-of-00001
+CNNBuilding/TF_code/variables/variables.index
