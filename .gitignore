@@ -8,7 +8,6 @@
 *.ort
 *.pyc
 *.ptl
-*.pth
 *.env
 *.onnx
 CNNBuilding/models_in_folder/CNNModelV0_2.pth
