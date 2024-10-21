@@ -7,6 +7,7 @@ from PIL import Image
 import os
 from io import BytesIO
 import pyTorchModel as py
+import uvicorn
 
 # Get the parent directory of the current directory (streamlit)
 parent_dir = os.path.dirname(os.path.abspath(__file__))
@@ -65,3 +66,7 @@ async def predict(file: UploadFile = File(...)):
     return {"class_name": class_name, "confidence": confidence}
 
 # Run the server with: uvicorn main:app --reload
+
+
+if __name__ == "__main__":
+    uvicorn.run("my_app:app", host="0.0.0.0", port=10000, reload=True)
