@@ -47,21 +47,24 @@ st.write("The solving part is still under development. At the moment the program
 
 uploaded_image = st.file_uploader("Upload Image Here")
 
+button = st.button("Click to determine Issue!")
 
-if uploaded_image is not None:
-    st.write("Image you have uploaded is below:")
-    st.image(uploaded_image, width=500)
-    with st.spinner("Please Wait..."):
-        time.sleep(2)
-        #Calling to pre process image
-        processedImage = pImg.preProcess(uploaded_image)
 
-        #Calling the model
-        prediction = predictImage(processedImage)
-        st.write(f"The predicted problem is {prediction} ")
-else:
-    
-    st.error('No file Uploaded')
+if button:
+    if uploaded_image is not None:
+        st.write("Image you have uploaded is below:")
+        st.image(uploaded_image, width=500)
+        with st.spinner("Please Wait..."):
+            time.sleep(2)
+            #Calling to pre process image
+            processedImage = pImg.preProcess(uploaded_image)
+
+            #Calling the model
+            prediction = predictImage(processedImage)
+            st.write(f"The predicted problem is {prediction} ")
+    else:
+        
+        st.error('No file Uploaded')
 
 #Adding dataframe for cached images?
 st.dataframe()
