@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.17.0",
-    "expo": "~50.0.11",
+    "expo": "^54.0.25",
     "expo-camera": "~14.0.6",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-native": "^0.73.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
